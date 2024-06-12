@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -7,12 +8,12 @@ export default function Navbar() {
     return (
         <nav className="w-[80%] h-[5.25rem] m-auto mt-7 bg-navbarBg text-center backdrop-blur-sm rounded-xl fixed left-[10%] border-[1px] border-dotted border-axsoterBlue">
             <div className="mx-16 flex items-center justify-between min-h-full">
-                <a className="font-MatterTRIAL cursor-pointer flex items-center justify-center gap-4" href='/'>
+                <Link className="font-MatterTRIAL cursor-pointer flex items-center justify-center gap-4" href='/'>
                     <Image src="/assets/img/icon.webp" width={45} height={45} className="w-[45px] rounded-lg" alt="Logo" />
                     <strong className="text-[2rem]">
                         Axsoter
                     </strong>
-                </a>
+                </Link>
                 <div className="lg:hidden block pl-6 w-7 h-[2px] mb-2">
                     <span></span>
                     <span></span>
@@ -25,26 +26,26 @@ export default function Navbar() {
                 "max-lg:fixed max-lg:border-[1px] max-lg:border-dotted max-lg:border-axsoterBlue max-lg:w-full max-lg:flex-col max-lg:pt-20 max-lg:pb-9 max-lg:ease-in-out max-lg:duration-300" +
                 " max-lg:opacity-0"
                 }>
-                    <li className="relative"><a className="cursor-pointer tracking-wide text-2xl ease-in-out duration-500 hover:text-axsoterBlue" href="/">Etusivu</a></li>
+                    <li className="relative"><Link className="cursor-pointer tracking-wide text-2xl ease-in-out duration-500 hover:text-axsoterBlue" href="/">Etusivu</Link></li>
                     <span className="lg:inline text-3xl text-[#333] mx-5 hidden">/</span>
-                    <li className="relative"><a className="cursor-pointer tracking-wide text-2xl ease-in-out duration-500 hover:text-axsoterBlue" href="/about">Tietoa</a></li>
+                    <li className="relative"><Link className="cursor-pointer tracking-wide text-2xl ease-in-out duration-500 hover:text-axsoterBlue" href="/billing/products">Kauppa</Link></li>
                     <span className="lg:inline text-3xl text-[#333] mx-5 hidden">/</span>
-                    <li className="relative"><a className="cursor-pointer tracking-wide text-2xl ease-in-out duration-500 hover:text-axsoterBlue" href="/team">Tiimi</a></li>
+                    <li className="relative"><Link className="cursor-pointer tracking-wide text-2xl ease-in-out duration-500 hover:text-axsoterBlue" href="/about">Tietoa</Link></li>
                     <span className="lg:inline text-3xl text-[#333] mx-5 hidden">/</span>
-                    <li className="relative"><a className="cursor-pointer tracking-wide text-2xl ease-in-out duration-500 hover:text-axsoterBlue" href="/blog">Blogi</a></li>
+                    <li className="relative"><Link className="cursor-pointer tracking-wide text-2xl ease-in-out duration-500 hover:text-axsoterBlue" href="/blog">Blogi</Link></li>
                     <span className="lg:inline text-3xl text-[#333] mx-5 hidden">/</span>
-                    <li className="relative"><a className="cursor-pointer tracking-wide text-2xl ease-in-out duration-500 hover:text-axsoterBlue" target="_blank" href="https://axsoter.com/status/">Tila</a></li>
+                    <li className="relative"><Link className="cursor-pointer tracking-wide text-2xl ease-in-out duration-500 hover:text-axsoterBlue" target="_blank" href="https://axsoter.com/status/">Tila</Link></li>
 
                     <div className="lg:hidden block w-full px-4">
-                        <a href="https://console.axsoter.com" className="inline-block py-3 px-7 text-center cursor-pointer bg-axsoterBlue font-MatterTRIAL no-underline ease-in-out duration-700 hover:bg-brandGradient rounded-lg w-full mt-3" target="_blank">
+                        <Link href="https://console.axsoter.com" className="inline-block py-3 px-7 text-center cursor-pointer bg-axsoterBlue font-MatterTRIAL no-underline ease-in-out duration-700 hover:bg-brandGradient rounded-lg w-full mt-3" target="_blank">
                             Console
-                        </a>
+                        </Link>
                     </div>
                 </ul>
                 <div className="lg:block hidden">
-                    <a href="https://console.axsoter.com" className="inline-block py-3 px-7 text-center cursor-pointer bg-axsoterBlue font-MatterTRIAL no-underline mr-[50px] ease-in-out duration-700 hover:bg-brandGradient rounded-full" target="_blank">
+                    <Link href="https://console.axsoter.com" className="inline-block py-3 px-7 text-center cursor-pointer bg-axsoterBlue font-MatterTRIAL no-underline mr-[50px] ease-in-out duration-700 hover:bg-brandGradient rounded-full" target="_blank">
                         Console
-                    </a>
+                    </Link>
                 </div>
             </div>
         </nav>
