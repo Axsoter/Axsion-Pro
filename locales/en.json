@@ -4,7 +4,18 @@
         "shop": "Shop",
         "about": "About",
         "blog": "Blog",
-        "status": "Status"
+        "status": "Status",
+        "login": "Log in",
+        "signup": "Sign up",
+        "console": "Console",
+
+        "terms": {
+            "tos": "Terms of Service",
+            "privacy": "Privacy policy",
+            "disclaimer": "Disclaimer"
+        },
+
+        "copyright": "© 2024 <weblink>{service}</weblink> & contributors. All rights reserved."
     },
 
     "footer": {
@@ -13,6 +24,10 @@
             "terms": "Terms:",
             "links": "Links:",
             "other": "Other:"
+        },
+
+        "contacts": {
+            "email": "Email address:"
         }
     }
 }
