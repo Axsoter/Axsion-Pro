@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "next": "14.2.3",
+    "next-intl": "^3.15.0",
     "react": "^18",
     "react-dom": "^18",
     "scrollreveal": "^4.0.9"

@@ -1,8 +1,12 @@
 import Image from "next/image"
 import ScrollReveal from "../helpers/ScrollReveal"
 import Link from "next/link"
+import { useTranslations } from 'next-intl';
 
 export default function Footer() {
+    const t = useTranslations('footer');
+    const general = useTranslations('general')
+
     return (
         <ScrollReveal revealConfig={{ reset: false }}>
             <footer className="bg-footerBg w-[80%] mx-auto rounded-xl mb-4 border-[1px] border-dotted border-axsoterBlue">
@@ -16,60 +20,54 @@ export default function Footer() {
                         </div>
                         <div className="grid grid-cols-2 gap-6 sm:gap-6 sm:grid-cols-4">
                             <div>
-                                <h2 className="mb-2 text-sm font-semibold text-white uppercase">Yhteydenotto</h2>
+                                <h2 className="mb-2 text-sm font-semibold text-white uppercase">{t('titles.contact')}</h2>
                                 <ul className="font-medium">
                                     <li className="mb-4 text-gray-300">
-                                        <a href="mailto:contact@axsoter.com" className="break-words">Sähköpostiosoite:
-                                            contact@axsoter.com</a>
+                                        <a href="mailto:contact@axsoter.com" className="break-words">{t('contacts.email')} contact@axsoter.com</a>
                                     </li>
                                 </ul>
                             </div>
                             <div>
-                                <h2 className="mb-2 text-sm font-semibold text-white uppercase">EHDOT:</h2>
+                                <h2 className="mb-2 text-sm font-semibold text-white uppercase">{t('titles.terms')}</h2>
                                 <ul className="font-medium">
                                     <li className="mb-[0.15rem] text-gray-300">
-                                        <a href="/tos">ToS</a>
+                                        <a href="/tos">{general('terms.tos')}</a>
                                     </li>
                                 </ul>
                                 <ul className="font-medium">
                                     <li className="mb-[0.15rem] text-gray-300">
-                                        <a href="/privacy">Tietosuojaseloste</a>
+                                        <a href="/privacy">{general('terms.privacy')}</a>
                                     </li>
                                 </ul>
                                 <ul className="font-medium">
                                     <li className="mb-[0.15rem] text-gray-300">
-                                        <a href="/disclaimer">Vastuunvapautus</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h2 className="mb-2 text-sm font-semibold text-white uppercase">LINKIT:</h2>
-                                <ul className="font-medium">
-                                    <li className="mb-[0.15rem] text-gray-300">
-                                        <a href="https://axsoter.com/console/">Console</a>
-                                    </li>
-                                </ul>
-                                <ul className="font-medium">
-                                    <li className="mb-[0.15rem] text-gray-300">
-                                        <a href="https://axsoter.com/console/">Paneeli</a>
-                                    </li>
-                                </ul>
-                                <ul className="font-medium">
-                                    <li className="mb-[0.15rem] text-gray-300">
-                                        <a href="https://axsoter.com/login/">Kirjaudu</a>
-                                    </li>
-                                </ul>
-                                <ul className="font-medium">
-                                    <li className="mb-[0.15rem] text-gray-300">
-                                        <a href="https://axsoter.com/register/">Luo käyttäjä</a>
+                                        <a href="/disclaimer">{general('terms.disclaimer')}</a>
                                     </li>
                                 </ul>
                             </div>
                             <div>
-                                <h2 className="mb-2 text-sm font-semibold text-white uppercase">Muuta:</h2>
+                                <h2 className="mb-2 text-sm font-semibold text-white uppercase">{t('titles.links')}</h2>
                                 <ul className="font-medium">
                                     <li className="mb-[0.15rem] text-gray-300">
-                                        <a href="/blog/">Blogi</a>
+                                        <a href="https://axsoter.com/console/">{general('console')}</a>
+                                    </li>
+                                </ul>
+                                <ul className="font-medium">
+                                    <li className="mb-[0.15rem] text-gray-300">
+                                        <a href="https://axsoter.com/login/">{general('login')}</a>
+                                    </li>
+                                </ul>
+                                <ul className="font-medium">
+                                    <li className="mb-[0.15rem] text-gray-300">
+                                        <a href="https://axsoter.com/register/">{general('signup')}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 className="mb-2 text-sm font-semibold text-white uppercase">{t('titles.other')}</h2>
+                                <ul className="font-medium">
+                                    <li className="mb-[0.15rem] text-gray-300">
+                                        <a href="/blog/">{general('blog')}</a>
                                     </li>
                                 </ul>
                             </div>
@@ -77,7 +75,11 @@ export default function Footer() {
                     </div>
                     <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
                     <div className="sm:flex sm:items-center sm:justify-between">
-                        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="/" className="hover:underline">Axsoter™</a>. Kaikki oikeudet pidätetään.
+                        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+                            {general.rich('copyright', {
+                                service: "Axsoter™",
+                                weblink: (chunks) => <a href="/" className="hover:underline">{chunks}</a>
+                            })}
                         </span>
                         <div className="flex mt-0 sm:justify-center items-center">
                             <a href="/youtube" className="text-[#FF0000] hover:text-white">

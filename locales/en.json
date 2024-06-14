@@ -1,0 +1,18 @@
+{
+    "general": {
+        "homepage": "Homepage",
+        "shop": "Shop",
+        "about": "About",
+        "blog": "Blog",
+        "status": "Status"
+    },
+
+    "footer": {
+        "titles": {
+            "contact": "Contacts:",
+            "terms": "Terms:",
+            "links": "Links:",
+            "other": "Other:"
+        }
+    }
+}

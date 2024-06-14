@@ -1,0 +1,33 @@
+{
+    "general": {
+        "homepage": "Etusivu",
+        "shop": "Kauppa",
+        "about": "Tietoa",
+        "blog": "Blogi",
+        "status": "Tila",
+        "login": "Kirjaudu",
+        "signup": "Rekisteröidy",
+        "console": "Konsoli",
+
+        "terms": {
+            "tos": "Käyttöehdot",
+            "privacy": "Tietosuojaseloste",
+            "disclaimer": "Vastuunvapautus"
+        },
+
+        "copyright": "© 2024 <weblink>{service}</weblink>. Kaikki oikeudet pidätetään."
+    },
+
+    "footer": {
+        "titles": {
+            "contact": "Yhteystiedot:",
+            "terms": "Ehdot:",
+            "links": "Linkit:",
+            "other": "Muuta:"
+        },
+
+        "contacts": {
+            "email": "Sähköpostiosoite:"
+        }
+    }
+}
