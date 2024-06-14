@@ -29,5 +29,13 @@
         "contacts": {
             "email": "Email address:"
         }
+    },
+    
+    "pages": {
+        "404": {
+            "title": "Well, there's nothin' here.",
+            "description": "The site you're looking for is certaintly not here.",
+            "button": "Back to the homepage"
+        }
     }
 }

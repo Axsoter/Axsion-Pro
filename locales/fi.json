@@ -29,5 +29,13 @@
         "contacts": {
             "email": "Sähköpostiosoite:"
         }
+    },
+    
+    "pages": {
+        "404": {
+            "title": "Täältäpä ei löytynytkään mitään.",
+            "description": "Sivua mitä etsit ei löydy ainakaan täältä.",
+            "button": "Takaisin etusivuille"
+        }
     }
 }
