@@ -9,7 +9,10 @@ import {getLocale, getMessages} from 'next-intl/server';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Axsoter",
+  title: {
+    default: "Axsoter, Ilmaisia suomalaisia Minecraft pelipalvelimia ja muuta!",
+    template: "Axsoter | %s"
+  },
   description: "Ilmaisia palvelimia ig",
 };
 
