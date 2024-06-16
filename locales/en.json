@@ -1,6 +1,6 @@
 {
     "general": {
-        "homepage": "Homepage",
+        "homepage": "Home",
         "shop": "Shop",
         "about": "About",
         "blog": "Blog",
@@ -20,7 +20,7 @@
 
     "footer": {
         "titles": {
-            "contact": "Contacts:",
+            "contact": "Contact us:",
             "terms": "Terms:",
             "links": "Links:",
             "other": "Other:"
