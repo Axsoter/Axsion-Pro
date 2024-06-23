@@ -4,6 +4,7 @@ import AxsoterLogo from "../other/AxsoterLogo";
 import Link from "next/link";
 import { useState } from "react";
 import { useTranslations } from 'next-intl';
+import NavLoginButton from "../buttons/NavLogin";
 
 export default function Navbar() {
     const [mobileNav, setMobileNav] = useState(false)
@@ -54,9 +55,7 @@ export default function Navbar() {
                     </ul>
 
                     <div className="lg:w-48 lg:relative lg:right-0 w-full px-4 lg:px-0">
-                        <Link href="https://console.axsoter.com" className="inline-block py-3 px-7 text-center cursor-pointer bg-axsoterBlue font-MatterTRIAL no-underline ease-in-out duration-700 hover:bg-brandGradient lg:rounded-full rounded-lg w-full lg:w-auto mt-3 lg:mt-0" target="_blank">
-                            {general('console')}
-                        </Link>
+                        <NavLoginButton />
                     </div>
                 </div>
             </div>
