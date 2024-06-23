@@ -17,10 +17,13 @@ export default function Navbar() {
     }
 
     return (
-        <nav className="w-[80%] h-[5.25rem] m-auto mt-7 lg:bg-navbarBg bg-footerBg text-center backdrop-blur-sm rounded-xl fixed left-[10%] top-0 border-[1px] border-dotted border-axsoterBlue">
+        <nav className={
+            `w-[80%] h-[5.25rem] m-auto mt-7 bg-navbarBg text-center backdrop-blur-sm rounded-xl fixed left-[10%] top-0 
+             ${!mobileNav ? "border-[1px]" : ""} border-dotted border-axsoterBlue z-30`
+          }>          
             <div className="mx-16 flex items-center justify-between min-h-full">
                 { /* Logo */ }
-                <Link className="font-MatterTRIAL cursor-pointer flex items-center justify-center gap-4" href='/'>
+                <Link className="font-MatterTRIAL cursor-pointer flex items-center justify-center gap-4 lg:min-w-48 lg:mx-auto" href='/'>
                     <Image src="/assets/img/icon.webp" width={45} height={45} className="w-[45px] rounded-lg" alt="Logo" />
                     <strong className="text-[2rem]">
                         Axsoter
@@ -36,13 +39,13 @@ export default function Navbar() {
 
                 { /* tää on turhaa miks tänne tuut kattoo */}
                 <div className={
-                mobileNav ? "flex items-center font-MatterTRIAL top-0 left-0 " +
-                "max-lg:fixed max-lg:-z-10 max-lg:border-[1px] max-lg:border-dotted max-lg:border-axsoterBlue max-lg:bg-footerBg max-lg:w-full max-lg:flex-col max-lg:pt-20 max-lg:pb-9 max-lg:ease-in-out max-lg:duration-300" +
-                " max-lg:opacity-100 max-lg:block" : "flex items-center font-MatterTRIAL top-0 left-0 " +
-                "max-lg:fixed max-lg:-z-10 max-lg:border-[1px] max-lg:border-dotted max-lg:border-axsoterBlue max-lg:bg-footerBg max-lg:w-full max-lg:flex-col max-lg:pt-20 max-lg:pb-9 max-lg:ease-in-out max-lg:duration-300" +
-                " max-lg:opacity-0 max-lg:hidden"
+                    `flex items-center font-MatterTRIAL top-0 left-0 w-full 
+                    max-lg:fixed max-lg:-z-10 max-lg:border-[1px] max-lg:border-dotted max-lg:border-axsoterBlue 
+                    max-lg:bg-footerBg max-lg:w-full max-lg:flex-col max-lg:pt-20 max-lg:pb-9 max-lg:ease-in-out 
+                    max-lg:duration-300 max-lg:rounded-xl 
+                    ${mobileNav ? "max-lg:opacity-100 max-lg:block" : "max-lg:opacity-0 max-lg:hidden"}`
                 }>
-                    <ul className="list-none flex items-center max-lg:flex-col">
+                    <ul className="list-none flex items-center max-lg:flex-col w-fit mx-auto">
                         <li className="relative lg:p-0 py-5"><Link className="cursor-pointer tracking-wide text-2xl ease-in-out duration-500 hover:text-axsoterBlue" href="/">{general('homepage')}</Link></li>
                         <span className="lg:inline text-3xl text-[#333] mx-5 hidden">/</span>
                         <li className="relative lg:p-0 py-5"><Link className="cursor-pointer tracking-wide text-2xl ease-in-out duration-500 hover:text-axsoterBlue" href="/billing/products">{general('shop')}</Link></li>
@@ -54,8 +57,8 @@ export default function Navbar() {
                         <li className="relative lg:p-0 py-5"><Link className="cursor-pointer tracking-wide text-2xl ease-in-out duration-500 hover:text-axsoterBlue" target="_blank" href="https://status.axsoter.com/">{general('status')}</Link></li>
                     </ul>
 
-                    <div className="lg:w-auto lg:relative lg:right-0 w-full px-4">
-                        <Link href="https://console.axsoter.com" className="inline-block py-3 px-7 text-center cursor-pointer bg-axsoterBlue font-MatterTRIAL no-underline ease-in-out duration-700 hover:bg-brandGradient lg:rounded-full rounded-lg w-full mt-3 lg:mt-0" target="_blank">
+                    <div className="lg:w-48 lg:relative lg:right-0 w-full px-4 lg:px-0">
+                        <Link href="https://console.axsoter.com" className="inline-block py-3 px-7 text-center cursor-pointer bg-axsoterBlue font-MatterTRIAL no-underline ease-in-out duration-700 hover:bg-brandGradient lg:rounded-full rounded-lg w-full lg:w-auto mt-3 lg:mt-0" target="_blank">
                             {general('console')}
                         </Link>
                     </div>
