@@ -39,7 +39,10 @@
             "button": "Takaisin etusivuille"
         },
         "login": {
-            "title": "Kirjaudu jatkaaksesi."
+            "title": "Kirjaudu jatkaaksesi.",
+            "signInWith": "Kirjaudu palvelulla {service}",
+            "signInAxsoterID": "Kirjaudu Axsoter ID:llä",
+            "migrate": "Siirrä vanhalta tililtä"
         }
     }
 }

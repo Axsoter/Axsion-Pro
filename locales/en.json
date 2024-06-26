@@ -39,7 +39,9 @@
             "button": "Back to the homepage"
         },
         "login": {
-            "title": "Login to continue."
+            "title": "Login to continue.",
+            "signInWith": "Sign in with {service}",
+            "migrate": "Migrate from legacy account"
         }
     }
 }
