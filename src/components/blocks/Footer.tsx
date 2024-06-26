@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 
 export default function Footer() {
     const t = useTranslations('footer');
-    const general = useTranslations('general')
+    const general = useTranslations('general');
 
     return (
         <ScrollReveal revealConfig={{ reset: false }}>
@@ -14,7 +14,7 @@ export default function Footer() {
                     <div className="md:flex md:justify-between">
                         <div className="mb-6 md:mb-0 mr-[5vw]">
                             <Link href="https://axsoter.com/" className="flex items-center">
-                                <Image src="/assets/img/icon.webp" width={32} height={32} className="h-8 me-1" alt="Axsoter Logo" />
+                                <Image src="/assets/img/axsoter-no-background.png" width={32} height={32} className="h-8 me-1" alt="Axsoter Logo" />
                                 <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Axsoter</span>
                             </Link>
                         </div>

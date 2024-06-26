@@ -4,15 +4,15 @@ import "./globals.css";
 import Navbar from "@/components/blocks/Navbar";
 import Footer from "@/components/blocks/Footer";
 import Notification from "@/components/blocks/AdNotification";
-import {NextIntlClientProvider} from 'next-intl';
-import {getLocale, getMessages} from 'next-intl/server';
+import { NextIntlClientProvider } from 'next-intl';
+import { getLocale, getMessages } from 'next-intl/server';
 import TawkTo from "@/components/blocks/tawkto";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Assoter, Ilmaisia suomalaisia Minecraft pelipalvelimia ja muuta!",
+    default: "Axsoter, Ilmaisia suomalaisia Minecraft pelipalvelimia ja muuta!",
     template: "Axsoter | %s"
   },
   description: "Ilmaisia palvelimia ig",

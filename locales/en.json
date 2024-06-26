@@ -15,7 +15,8 @@
             "disclaimer": "Disclaimer"
         },
 
-        "copyright": "© 2024 <weblink>{service}</weblink> & contributors. All rights reserved."
+        "copyright": "© 2024 <weblink>{service}</weblink> & contributors. All rights reserved.",
+        "or": "or"
     },
 
     "footer": {
@@ -36,6 +37,9 @@
             "title": "Well, there's nothin' here.",
             "description": "The site you're looking for is certaintly not here.",
             "button": "Back to the homepage"
+        },
+        "login": {
+            "title": "Login to continue."
         }
     }
 }

@@ -1,5 +1,6 @@
 import NextAuth from 'next-auth';
 import Keycloak from "next-auth/providers/keycloak";
+import Discord from "next-auth/providers/discord";
 import { PrismaAdapter } from "@auth/prisma-adapter"
 import { PrismaClient } from "@prisma/client"
  
@@ -10,5 +11,5 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   pages: {
     signIn: '/login',
   },
-  providers: [Keycloak],
+  providers: [/*Keycloak,*/ Discord],
 });

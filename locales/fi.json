@@ -15,7 +15,8 @@
             "disclaimer": "Vastuunvapautus"
         },
 
-        "copyright": "© 2024 <weblink>{service}</weblink> & contributors. Kaikki oikeudet pidätetään."
+        "copyright": "© 2024 <weblink>{service}</weblink> & contributors. Kaikki oikeudet pidätetään.",
+        "or": "tai"
     },
 
     "footer": {
@@ -36,6 +37,9 @@
             "title": "Täältäpä ei löytynytkään mitään.",
             "description": "Sivua mitä etsit ei löydy ainakaan täältä.",
             "button": "Takaisin etusivuille"
+        },
+        "login": {
+            "title": "Kirjaudu jatkaaksesi."
         }
     }
 }
