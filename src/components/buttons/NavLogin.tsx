@@ -33,11 +33,7 @@ export default function NavLoginButton() {
         fetchData();
     }, []);
 
-    if (loading) {
-        return <div>Loading...</div>;
-    }
-
-    return session != null ? (
+    return (session != null && !loading) ? (
         <div>
             <div className="inline-flex items-center justify-center">
                 <img className="w-8 h-8 rounded-md" src={session.user.image} alt="Avatar" />
