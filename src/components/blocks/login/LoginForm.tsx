@@ -10,7 +10,7 @@ export default function LoginForm({queryParams}: {queryParams: { [key: string]: 
     return (
         <div>
             <h2 className="text-lg font-semibold">{t('title')}</h2>
-            <div className="mt-3 border-2 border-dotted border-axsoterBlue rounded-md p-[0.125rem]">
+            <div className="mt-3">
                 <form
                     action={async () => {
                         "use server"

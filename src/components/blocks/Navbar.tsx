@@ -17,7 +17,7 @@ export default function Navbar() {
     return (
         <nav className={
             `min-w-[80%] h-[5.25rem] m-auto mt-7 bg-navbarBg text-center backdrop-blur-sm rounded-xl fixed left-[10%] top-0 
-             ${!mobileNav ? "border-[1px]" : ""} border-dotted border-axsoterBlue z-30`
+             ${!mobileNav ? "border-2" : ""} border-dotted border-axsoterBlue z-30`
           }>          
             <div className="mx-16 flex items-center justify-between min-h-full">
                 { /* Logo */ }
@@ -33,7 +33,7 @@ export default function Navbar() {
                 { /* tää on turhaa miks tänne tuut kattoo */}
                 <div className={
                     `flex items-center font-MatterTRIAL top-0 left-0 w-full 
-                    max-lg:fixed max-lg:-z-10 max-lg:border-[1px] max-lg:border-dotted max-lg:border-axsoterBlue 
+                    max-lg:fixed max-lg:-z-10 max-lg:border-2 max-lg:border-dotted max-lg:border-axsoterBlue 
                     max-lg:bg-footerBg max-lg:w-full max-lg:flex-col max-lg:pt-20 max-lg:pb-9 max-lg:ease-in-out 
                     max-lg:duration-300 max-lg:rounded-xl 
                     ${mobileNav ? "max-lg:opacity-100 max-lg:block" : "max-lg:opacity-0 max-lg:hidden"}`
