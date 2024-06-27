@@ -2,18 +2,19 @@ import { signIn } from "@/auth"
 import AxsoterIcon from "@/components/other/AxsoterIcon"
 import { useTranslations } from 'next-intl';
 
-export default function LoginForm() {
+export default function LoginForm({queryParams}: {queryParams: { [key: string]: string | undefined }}) {
     const t = useTranslations('pages.login');
     const general = useTranslations('general');
+
 
     return (
         <div>
             <h2 className="text-lg font-semibold">{t('title')}</h2>
-            <div className="mt-3 border-2 border-dotted border-axsoterBlue rounded-md p-2">
+            <div className="mt-3 border-2 border-dotted border-axsoterBlue rounded-md p-[0.125rem]">
                 <form
                     action={async () => {
                         "use server"
-                        await signIn("keycloak")
+                        await signIn("keycloak", {redirectTo: queryParams.callbackUrl})
                     }}
                 >
                     <button type="submit" className="mb-4 py-2 px-4 w-full rounded-md text-center font-medium !flex gap-x-2 items-center justify-center bg-axsoterBlue hover:bg-brandGradient">
@@ -25,16 +26,16 @@ export default function LoginForm() {
                     {t('migrate')}
                 </a>
             </div>
-            <div className="flex items-center my-2 mx-[0.625rem]">
+            <div className="flex items-center my-2">
                 <div className="w-full h-0.5 bg-white" />
                 <div className="px-5 text-center">{general('or')}</div>
                 <div className="w-full h-0.5 bg-white" />
             </div>
-            <div className="px-[0.625rem]">
+            <div>
                 <form
                     action={async () => {
                         "use server"
-                        await signIn("discord")
+                        await signIn("discord", {redirectTo: queryParams.callbackUrl})
                     }}
                 >
                     <button type="submit" className="mt-3 py-2 px-4 w-full rounded-md text-center font-medium !flex gap-x-2 items-center justify-center bg-slate-600">

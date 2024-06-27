@@ -11,16 +11,12 @@ export default function Navbar() {
     const general = useTranslations('general');
 
     function hamburger() {
-        if (mobileNav == false) {
-            setMobileNav(true);
-        } else {
-            setMobileNav(false);
-        }
+        setMobileNav(!mobileNav)
     }
 
     return (
         <nav className={
-            `w-[80%] h-[5.25rem] m-auto mt-7 bg-navbarBg text-center backdrop-blur-sm rounded-xl fixed left-[10%] top-0 
+            `min-w-[80%] h-[5.25rem] m-auto mt-7 bg-navbarBg text-center backdrop-blur-sm rounded-xl fixed left-[10%] top-0 
              ${!mobileNav ? "border-[1px]" : ""} border-dotted border-axsoterBlue z-30`
           }>          
             <div className="mx-16 flex items-center justify-between min-h-full">
@@ -42,7 +38,7 @@ export default function Navbar() {
                     max-lg:duration-300 max-lg:rounded-xl 
                     ${mobileNav ? "max-lg:opacity-100 max-lg:block" : "max-lg:opacity-0 max-lg:hidden"}`
                 }>
-                    <ul className="list-none flex items-center max-lg:flex-col w-fit mx-auto">
+                    <ul className="list-none flex items-center justify-center max-lg:flex-col w-fit mx-auto grow">
                         <li className="relative lg:p-0 py-5"><Link className="cursor-pointer tracking-wide text-2xl ease-in-out duration-500 hover:text-axsoterBlue" href="/">{general('homepage')}</Link></li>
                         <span className="lg:inline text-3xl text-[#333] mx-5 hidden">/</span>
                         <li className="relative lg:p-0 py-5"><Link className="cursor-pointer tracking-wide text-2xl ease-in-out duration-500 hover:text-axsoterBlue" href="/billing/products">{general('shop')}</Link></li>
