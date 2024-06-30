@@ -10,6 +10,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   //adapter: PrismaAdapter(prisma),
   pages: {
     signIn: '/login',
+    signOut: '/api/auth/logout',
   },
   providers: [/*Keycloak,*/ Discord],
 });

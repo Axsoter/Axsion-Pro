@@ -9,7 +9,7 @@ export default function Footer() {
 
     return (
         <ScrollReveal revealConfig={{ reset: false }}>
-            <footer className="bg-footerBg/35 backdrop-blur-sm w-[80%] mx-auto rounded-xl mb-4 border-2 border-dotted border-axsoterBlue">
+            <footer className="bg-footerBg w-[80%] mx-auto rounded-xl mb-4 border-2 border-dotted border-axsoterBlue">
                 <div className="mx-auto w-[80vw] p-4 px-12 py-6 lg:py-8">
                     <div className="md:flex md:justify-between">
                         <div className="mb-6 md:mb-0 mr-[5vw]">
