@@ -40,7 +40,8 @@
         },
         "login": {
             "title": "Login to continue.",
-            "signInWith": "Sign in with {service}",
+            "signInWith": "Login with {service}",
+            "signInAxsoterID": "Login with your Axsoter ID",
             "migrate": "Migrate from legacy account"
         }
     }

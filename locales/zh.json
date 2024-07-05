@@ -41,6 +41,7 @@
         "login": {
             "title": "登录以继续。",
             "signInWith": "用{service}登录",
+            "signInAxsoterID": "使用您的 Axsoter ID 登录",
             "migrate": "从旧账户迁移"
         }
     }
