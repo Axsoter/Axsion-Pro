@@ -4,10 +4,10 @@ import Discord from "next-auth/providers/discord";
 import { PrismaAdapter } from "@auth/prisma-adapter"
 import { PrismaClient } from "@prisma/client"
  
-//const prisma = new PrismaClient()
+const prisma = new PrismaClient()
  
 export const { handlers, signIn, signOut, auth } = NextAuth({
-  //adapter: PrismaAdapter(prisma),
+  adapter: PrismaAdapter(prisma),
   pages: {
     signIn: '/login',
     signOut: '/api/auth/logout',
