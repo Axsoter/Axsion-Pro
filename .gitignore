@@ -40,6 +40,7 @@ next-env.d.ts
 
 # Private main website files
 /src/app/page.tsx
+/src/app/page.css
 /src/app/about/
 /src/components/blocks/AdNotification.tsx
 /public/assets/img/
