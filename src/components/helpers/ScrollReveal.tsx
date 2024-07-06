@@ -21,8 +21,7 @@ const ScrollReveal: FC<ScrollRevealProps> = ({
         distance: '60px',
         duration: 1000,
         delay: 400,
-        reset: true,
-        interval: 100
+        interval: 100,
     }).reveal(sectionRef.current, revealConfig);
     }
   }, [revealConfig]);

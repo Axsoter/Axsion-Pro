@@ -8,7 +8,7 @@ export default function Footer() {
     const general = useTranslations('general');
 
     return (
-        <ScrollReveal revealConfig={{ reset: false }}>
+        <ScrollReveal>
             <footer className="bg-footerBg w-[80%] mx-auto rounded-xl mb-4 border-2 border-dotted border-axsoterBlue">
                 <div className="mx-auto w-[80vw] p-4 px-12 py-6 lg:py-8">
                     <div className="md:flex md:justify-between">
