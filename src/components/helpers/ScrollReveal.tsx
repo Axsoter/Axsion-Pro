@@ -12,7 +12,7 @@ interface SRConfigProps {
   origin?: string
 }
 
-export default function ScrollReveal({children, revealConfig = {origin: "bottom"}}: SRProps) {
+export default function ScrollReveal({children, revealConfig = { origin: "bottom" }}: SRProps) {
   const sectionRef = useRef(null);
   const inView = useInView(sectionRef, { once: true /* = reset: false */ })
   const animHook = useAnimation()
@@ -30,6 +30,8 @@ export default function ScrollReveal({children, revealConfig = {origin: "bottom"
         hiddenBottom: { opacity: 0, y: 60 },
         hiddenLeft: { opacity: 0, x: -60 },
         hiddenRight: { opacity: 0, x: 60 },
+        hiddenLeftBottom: { opacity: 0, y: 60, x: -60 },
+        hiddenRightBottom: { opacity: 0, y: 60, x: 60 },
         shown: { opacity: 1, y: 0, x: 0 }
       }}
       initial={`hidden${revealConfig.origin}`}
