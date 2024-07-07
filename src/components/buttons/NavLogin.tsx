@@ -56,7 +56,7 @@ export default function NavLoginButton() {
 
                 {/* Popup */}
 
-                <div className={`absolute ${popupState ? "" : "hidden"} left-0 p-4 lg:top-12 top-[33.75rem] lg:w-72 w-full mt-2 origin-top-right bg-footerBg backdrop-blur-sm border-2 border-dotted border-axsoterBlue rounded-lg font-normal text-start`}>
+                <div className={`absolute ${popupState ? "" : "hidden"} left-0 p-4 lg:top-12 top-[33.75rem] lg:w-72 w-full mt-2 origin-top-right bg-defaultBg backdrop-blur-sm border-2 border-dotted border-axsoterBlue rounded-lg font-normal text-start`}>
                     <div className="flex items-center justify-center">
                         <div className="inline-flex items-center justify-center mr-auto">
                             <img className="w-8 h-8 rounded-md" src={session.user.image} alt="Avatar" />

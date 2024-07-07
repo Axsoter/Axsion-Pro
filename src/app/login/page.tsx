@@ -12,7 +12,7 @@ export default async function LoginPage({searchParams}: {searchParams: { [key: s
             <div className="flex items-center font-semibold text-lg py-4 gap-x-2">
                 <AxsoterLogo />
             </div>
-            <div className="max-w-lg w-full bg-footerBg rounded-2xl px-6 py-5 border-2 border-dotted border-axsoterBlue">
+            <div className="max-w-lg w-full bg-defaultBg rounded-2xl px-6 py-5 border-2 border-dotted border-axsoterBlue">
                 <LoginForm queryParams={searchParams} />
             </div>
         </div>

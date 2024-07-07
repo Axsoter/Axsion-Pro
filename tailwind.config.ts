@@ -14,7 +14,7 @@ const config: Config = {
       colors: {
         'axsoterBlue': "#393cb9",
         'navbarBg': "rgba(62, 155, 145, .06)",
-        'footerBg': "#101113",
+        'defaultBg': "#101113",
       },
       backgroundImage: {
         'brandGradient': "linear-gradient(210deg, #393cb9, #00065a)",
