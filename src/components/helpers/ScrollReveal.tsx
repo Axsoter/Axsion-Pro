@@ -1,40 +1,44 @@
 "use client"
 
-import React, { useRef, useEffect, FC, HTMLAttributes } from "react";
-import scrollReveal from "scrollreveal";
+import { useRef, useEffect } from "react";
+import { motion, useInView, useAnimation } from "framer-motion"
 
-interface ScrollRevealProps extends HTMLAttributes<HTMLElement> {
-  revealConfig?: scrollReveal.ScrollRevealObjectOptions;
+interface SRProps {
+  children: JSX.Element,
+  revealConfig?: SRConfigProps,
 }
 
-const ScrollReveal: FC<ScrollRevealProps> = ({
-  children,
-  revealConfig = {},
-  ...props
-}) => {
-  const sectionRef = useRef<HTMLElement>(null);
+interface SRConfigProps {
+  origin?: string
+}
+
+export default function ScrollReveal({children, revealConfig = {origin: "bottom"}}: SRProps) {
+  const sectionRef = useRef(null);
+  const inView = useInView(sectionRef, { once: true /* = reset: false */ })
+  const animHook = useAnimation()
+
+  revealConfig.origin = revealConfig.origin!.charAt(0).toUpperCase() + revealConfig.origin!.slice(1);
+  console.log(revealConfig.origin)
 
   useEffect(() => {
-    if (sectionRef.current) {
-      scrollReveal({
-        origin: 'bottom',
-        distance: '60px',
-        duration: 1000,
-        delay: 400,
-        interval: 100,
-    }).reveal(sectionRef.current, revealConfig);
-    }
-  }, [revealConfig]);
+    if (inView) { animHook.start("shown") };
+  }, [inView])
 
   return (
-    <section
+    <motion.section
+      variants={{
+        hiddenBottom: { opacity: 0, y: 60 },
+        hiddenLeft: { opacity: 0, x: -60 },
+        hiddenRight: { opacity: 0, x: 60 },
+        shown: { opacity: 1, y: 0, x: 0 }
+      }}
+      initial={`hidden${revealConfig.origin}`}
+      animate={animHook}
+      transition={{ duration: 0.5, delay: 0.4 }}
+
       ref={sectionRef}
-      data-testid="section"
-      {...props}
     >
       {children}
-    </section>
+    </motion.section>
   );
 };
-
-export default ScrollReveal;

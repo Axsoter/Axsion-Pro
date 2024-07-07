@@ -11,12 +11,12 @@
   "dependencies": {
     "@auth/prisma-adapter": "^2.4.1",
     "@prisma/client": "^5.16.1",
+    "framer-motion": "^11.2.13",
     "next": "14.2.3",
     "next-auth": "^5.0.0-beta.19",
     "next-intl": "^3.15.0",
     "react": "^18",
-    "react-dom": "^18",
-    "scrollreveal": "^4.0.9"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
