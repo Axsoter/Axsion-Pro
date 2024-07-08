@@ -14,14 +14,14 @@ interface SRConfigProps {
 
 export default function ScrollReveal({children, revealConfig = { origin: "bottom" }}: SRProps) {
   const sectionRef = useRef(null);
-  const inView = useInView(sectionRef, { once: true /* = reset: false */ })
+  const inView = useInView(sectionRef, { once: false /* = reset: true */ })
   const animHook = useAnimation()
 
   revealConfig.origin = revealConfig.origin!.charAt(0).toUpperCase() + revealConfig.origin!.slice(1);
   console.log(revealConfig.origin)
 
   useEffect(() => {
-    if (inView) { animHook.start("shown") };
+    if (inView) { animHook.start("shown") } else { animHook.set(`hidden${revealConfig.origin}`) };
   }, [inView])
 
   return (
