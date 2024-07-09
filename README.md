@@ -4,7 +4,7 @@
 Our own website & billing system.
 
 ## Installation instructions
-Install Node.JS (or Bun, THO UNTESTED)
+Install Node.js (or similar) and **npm** (npm required, everything else is NOT TESTED, AND NOT SUPPORTED)
 
 Run `npm install` and
 - `npm run dev` to test
