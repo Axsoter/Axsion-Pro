@@ -9,12 +9,13 @@ interface SRProps {
 }
 
 interface SRConfigProps {
-  origin?: string
+  origin?: string,
+  delay?: number
 }
 
-export default function ScrollReveal({children, revealConfig = { origin: "bottom" }}: SRProps) {
+export default function ScrollReveal({children, revealConfig = { origin: "bottom", delay: 1 }}: SRProps) {
   const sectionRef = useRef(null);
-  const inView = useInView(sectionRef, { once: false /* = reset: true */ })
+  const inView = useInView(sectionRef, { once: true /* = reset: false */ })
   const animHook = useAnimation()
 
   revealConfig.origin = revealConfig.origin!.charAt(0).toUpperCase() + revealConfig.origin!.slice(1);
@@ -36,7 +37,7 @@ export default function ScrollReveal({children, revealConfig = { origin: "bottom
       }}
       initial={`hidden${revealConfig.origin}`}
       animate={animHook}
-      transition={{ duration: 0.5, delay: 0.4 }}
+      transition={{ duration: 0.5, delay: 0.4 * revealConfig.delay! }}
 
       ref={sectionRef}
     >

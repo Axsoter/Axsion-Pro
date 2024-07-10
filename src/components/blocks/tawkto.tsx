@@ -15,5 +15,5 @@ export default function TawkTo() {
         })();
     })
 
-    return (<div id="älä nyt tänne pls kato tää on vaa tawkto element thx" />);
+    return (<></>);
 }
