@@ -1,10 +1,10 @@
 "use client"
 
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, ReactNode } from "react";
 import { motion, useInView, useAnimation } from "framer-motion"
 
 interface SRProps {
-  children: JSX.Element,
+  children: ReactNode,
   revealConfig?: SRConfigProps,
 }
 
@@ -14,6 +14,9 @@ interface SRConfigProps {
 }
 
 export default function ScrollReveal({children, revealConfig = { origin: "bottom", delay: 1 }}: SRProps) {
+  if (revealConfig.origin == undefined) {
+    revealConfig.origin = "bottom";
+  }
   const sectionRef = useRef(null);
   const inView = useInView(sectionRef, { once: true /* = reset: false */ })
   const animHook = useAnimation()
@@ -23,7 +26,7 @@ export default function ScrollReveal({children, revealConfig = { origin: "bottom
 
   useEffect(() => {
     if (inView) { animHook.start("shown") } else { animHook.set(`hidden${revealConfig.origin}`) };
-  }, [inView])
+  }, [inView, animHook, revealConfig])
 
   return (
     <motion.section

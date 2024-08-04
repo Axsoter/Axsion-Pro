@@ -31,7 +31,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={"min-w-screen overflow-x-hidden text-white m-0 p-0 bodyBg " + inter.className}>
+      <body className={"min-w-screen max-w-[100vw] overflow-x-hidden text-white m-0 p-0 bodyBg " + inter.className}>
         <NextIntlClientProvider messages={messages}>
           <Notification />
           <Navbar />
