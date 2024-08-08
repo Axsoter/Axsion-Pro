@@ -5,7 +5,8 @@
         "about": "Tietoa",
         "blog": "Blogi",
         "status": "Tila",
-        "login": "Kirjaudu",
+        "login": "Kirjaudu sisään",
+        "logout": "Kirjaudu ulos",
         "signup": "Rekisteröidy",
         "console": "Konsoli",
 
@@ -17,6 +18,10 @@
 
         "copyright": "© 2024 <weblink>{service}</weblink> & contributors. Kaikki oikeudet pidätetään.",
         "or": "tai"
+    },
+
+    "profile": {
+        "services": "Sinun palvelut"
     },
 
     "footer": {

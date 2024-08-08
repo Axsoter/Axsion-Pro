@@ -38,6 +38,7 @@ export default async function RootLayout({
           {children}
           <Footer />
           <TawkTo />
+          <script src="/adv-socialbar-scroll.js" async></script>
         </NextIntlClientProvider>
       </body>
     </html>

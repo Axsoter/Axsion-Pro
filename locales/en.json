@@ -5,7 +5,8 @@
         "about": "About",
         "blog": "Blog",
         "status": "Status",
-        "login": "Log in",
+        "login": "Login",
+        "logout": "Logout",
         "signup": "Sign up",
         "console": "Console",
 
@@ -17,6 +18,10 @@
 
         "copyright": "© 2024 <weblink>{service}</weblink> & contributors. All rights reserved.",
         "or": "or"
+    },
+
+    "profile": {
+        "services": "Your services"
     },
 
     "footer": {

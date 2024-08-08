@@ -15,6 +15,7 @@ interface Session {
 
 export default function NavLoginButton() { 
     const general = useTranslations('general');
+    const t = useTranslations('profile');
     const [session, setSession] = useState<Session | null>(null);
     const [loading, setLoading] = useState(true);
     const [popupState, setPopupState] = useState(false);
@@ -91,7 +92,7 @@ export default function NavLoginButton() {
                             <path d="m260-520 220-360 220 360H260ZM700-80q-75 0-127.5-52.5T520-260q0-75 52.5-127.5T700-440q75 0 127.5 52.5T880-260q0 75-52.5 127.5T700-80Zm-580-20v-320h320v320H120Zm580-60q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm-500-20h160v-160H200v160Zm202-420h156l-78-126-78 126Zm78 0ZM360-340Zm340 80Z"/>
                         </svg>
 
-                        Your services
+                        {t('services')}
                     </a>
                     <a href="/api/auth/logout" className="rounded p-2 mt-2 flex items-center gap-x-2 ease-in-out duration-300 hover:bg-slate-600 bg-slate-800">
                         <svg
@@ -105,7 +106,7 @@ export default function NavLoginButton() {
                             <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z"/>
                         </svg>
 
-                        Logout
+                        {general('logout')}
                     </a>
                 </div>
                 

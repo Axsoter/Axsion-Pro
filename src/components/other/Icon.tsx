@@ -1,15 +1,16 @@
 import { ReactNode } from "react";
 
 interface IconProps {
-    children: ReactNode
+    children: ReactNode,
+    size?: number
 }
 
-export default function Icon({children}: IconProps) {
+export default function Icon({children, size = 6}: IconProps) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
             height="48px"
-            className="w-6 h-6"
+            className={`w-${size} h-${size}`}
             viewBox="0 -960 960 960"
             width="48px"
             fill="currentColor"
