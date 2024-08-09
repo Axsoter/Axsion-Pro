@@ -6,9 +6,12 @@ Our own website & billing system.
 ## Installation instructions
 Install Node.js (or similar) and **npm** (npm required, everything else is NOT TESTED, AND NOT SUPPORTED)
 
-Run `npm install` and
+This project uses [Auth.js]()
+
+Run `npm install` and run
 - `npm run dev` to test
-- `npm run start` for production
+OR
+- `npm run build` & `npm run start` for production
 
 ## License
 This project is under the AxPAL License, [see license file](/LICENSE.md)
