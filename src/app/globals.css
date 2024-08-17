@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Matter;
+  src: url(/assets/font/Matter-Medium.woff) format('woff');
+}
+
+.bodyBg {
+  background-color: #0e0e0e;
+  opacity: 1;
+  background-image: radial-gradient(#393cb9 2px, transparent 2px), radial-gradient(#393cb9 2px, #0e0e0e 2px);
+  background-size: 80px 80px;
+  background-position: 0 0,40px 40px;
+}

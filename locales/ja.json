@@ -1,0 +1,48 @@
+{
+    "general": {
+        "homepage": "ホーム",
+        "shop": "ショップ",
+        "about": "概要",
+        "blog": "ブログ",
+        "status": "ステータス",
+        "login": "ログイン",
+        "signup": "サインアップ",
+        "console": "コンソール",
+
+        "terms": {
+            "tos": "利用規約",
+            "privacy": "プライバシーポリシー",
+            "disclaimer": "免責事項"
+        },
+
+        "copyright": "© 2024 <weblink>{service}</weblink> & 貢献者。全著作権所有。",
+        "or": "または"
+    },
+
+    "footer": {
+        "titles": {
+            "contact": "お問い合わせ：",
+            "terms": "規約：",
+            "links": "リンク：",
+            "other": "その他："
+        },
+
+        "contacts": {
+            "email": "電子メールアドレス："
+        }
+    },
+    
+    "pages": {
+        "404": {
+            "title": "まあ、ここには何もありません。",
+            "description": "お探しのサイトはここにはありません。",
+            "button": "ホームページに戻る"
+        },
+        "login": {
+            "title": "続行するにはログインしてください。",
+            "signInWith": "{service}でサインイン",
+            "signInAxsoterID": "Axsoter IDでログイン",
+            "migrate": "旧アカウントから移行"
+        }
+    }
+}

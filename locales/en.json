@@ -1,0 +1,53 @@
+{
+    "general": {
+        "homepage": "Home",
+        "shop": "Shop",
+        "about": "About",
+        "blog": "Blog",
+        "status": "Status",
+        "login": "Login",
+        "logout": "Logout",
+        "signup": "Sign up",
+        "console": "Console",
+
+        "terms": {
+            "tos": "Terms of Service",
+            "privacy": "Privacy policy",
+            "disclaimer": "Disclaimer"
+        },
+
+        "copyright": "© 2024 <weblink>{service}</weblink> & contributors. All rights reserved.",
+        "or": "or"
+    },
+
+    "profile": {
+        "services": "Your services"
+    },
+
+    "footer": {
+        "titles": {
+            "contact": "Contact us:",
+            "terms": "Terms:",
+            "links": "Links:",
+            "other": "Other:"
+        },
+
+        "contacts": {
+            "email": "Email address:"
+        }
+    },
+    
+    "pages": {
+        "404": {
+            "title": "Well, there's nothin' here.",
+            "description": "The site you're looking for is certaintly not here.",
+            "button": "Back to the homepage"
+        },
+        "login": {
+            "title": "Login to continue.",
+            "signInWith": "Login with {service}",
+            "signInAxsoterID": "Login with your Axsoter ID",
+            "migrate": "Migrate from legacy account"
+        }
+    }
+}

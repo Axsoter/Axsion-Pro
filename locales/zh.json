@@ -1,0 +1,48 @@
+{
+    "general": {
+        "homepage": "主页",
+        "shop": "商店",
+        "about": "关于",
+        "blog": "博客",
+        "status": "状态",
+        "login": "登录",
+        "signup": "注册",
+        "console": "控制台",
+
+        "terms": {
+            "tos": "服务条款",
+            "privacy": "隐私政策",
+            "disclaimer": "免责声明"
+        },
+
+        "copyright": "© 2024 <weblink>{service}</weblink> & 贡献者。保留所有权利。",
+        "or": "或"
+    },
+
+    "footer": {
+        "titles": {
+            "contact": "联系我们：",
+            "terms": "条款：",
+            "links": "链接：",
+            "other": "其他："
+        },
+
+        "contacts": {
+            "email": "电子邮件地址："
+        }
+    },
+    
+    "pages": {
+        "404": {
+            "title": "嗯，这里什么都没有。",
+            "description": "您要查找的站点肯定不在这里。",
+            "button": "返回主页"
+        },
+        "login": {
+            "title": "登录以继续。",
+            "signInWith": "用{service}登录",
+            "signInAxsoterID": "使用您的 Axsoter ID 登录",
+            "migrate": "从旧账户迁移"
+        }
+    }
+}

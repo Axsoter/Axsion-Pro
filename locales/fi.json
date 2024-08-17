@@ -1,0 +1,53 @@
+{
+    "general": {
+        "homepage": "Etusivu",
+        "shop": "Kauppa",
+        "about": "Tietoa",
+        "blog": "Blogi",
+        "status": "Tila",
+        "login": "Kirjaudu sisään",
+        "logout": "Kirjaudu ulos",
+        "signup": "Rekisteröidy",
+        "console": "Konsoli",
+
+        "terms": {
+            "tos": "Käyttöehdot",
+            "privacy": "Tietosuojaseloste",
+            "disclaimer": "Vastuunvapautus"
+        },
+
+        "copyright": "© 2024 <weblink>{service}</weblink> & contributors. Kaikki oikeudet pidätetään.",
+        "or": "tai"
+    },
+
+    "profile": {
+        "services": "Sinun palvelut"
+    },
+
+    "footer": {
+        "titles": {
+            "contact": "Yhteystiedot:",
+            "terms": "Ehdot:",
+            "links": "Linkit:",
+            "other": "Muuta:"
+        },
+
+        "contacts": {
+            "email": "Sähköpostiosoite:"
+        }
+    },
+    
+    "pages": {
+        "404": {
+            "title": "Täältäpä ei löytynytkään mitään.",
+            "description": "Sivua mitä etsit ei löydy ainakaan täältä.",
+            "button": "Takaisin etusivuille"
+        },
+        "login": {
+            "title": "Kirjaudu jatkaaksesi.",
+            "signInWith": "Kirjaudu palvelulla {service}",
+            "signInAxsoterID": "Kirjaudu Axsoter ID:llä",
+            "migrate": "Siirrä vanhalta tililtä"
+        }
+    }
+}
