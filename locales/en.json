@@ -48,6 +48,13 @@
             "signInWith": "Login with {service}",
             "signInAxsoterID": "Login with your Axsoter ID",
             "migrate": "Migrate from legacy account"
+        },
+        "admin": {
+            "dashboard": {
+                "welcome": "Hey! Welcome to use Axsion Pro.",
+                "info": "Info",
+                "stats": "Statistics"
+            }
         }
     }
 }

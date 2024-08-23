@@ -48,6 +48,13 @@
             "signInWith": "Kirjaudu palvelulla {service}",
             "signInAxsoterID": "Kirjaudu Axsoter ID:llä",
             "migrate": "Siirrä vanhalta tililtä"
+        },
+        "admin": {
+            "dashboard": {
+                "welcome": "Hei! Tervetuloa käyttämään Axsion Pro:ta.",
+                "info": "Tietoa",
+                "stats": "Tilastot"
+            }
         }
     }
 }
