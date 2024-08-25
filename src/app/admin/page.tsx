@@ -4,8 +4,8 @@ import { useTranslations } from 'next-intl';
 export default function Home() {
     const t = useTranslations('pages.admin.dashboard');
     return (
-      <main className="min-h-screen">
-        <div className="h-screen my-auto flex items-center justify-center flex-col">
+      <main className="min-h-full w-full flex items-center justify-center">
+        <div className="flex items-center justify-center flex-col h-fit">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 pb-10">
               <div className="flex items-center font-semibold text-lg py-4 gap-x-4">
                 <AxsoterLogo />
