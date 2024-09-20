@@ -17,9 +17,12 @@
     "next": "14.2.11",
     "next-auth": "^5.0.0-beta.20",
     "next-intl": "^3.17.6",
+    "prisma": "^5.19.1",
     "react": "^18",
     "react-dom": "^18",
-    "stripe": "^16.8.0"
+    "skinview3d": "^3.0.1",
+    "stripe": "^16.8.0",
+    "vanilla-tilt": "^1.8.1"
   },
   "devDependencies": {
     "@types/node": "^22",
@@ -29,7 +32,6 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "postcss": "^8",
-    "prisma": "^5.16.1",
     "tailwindcss": "^3.4.6",
     "typescript": "^5"
   }

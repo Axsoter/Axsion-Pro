@@ -1,10 +1,10 @@
 "use client"
 
-import { useRef, useEffect, ReactNode } from "react";
+import { useRef, useEffect } from "react";
 import { motion, useInView, useAnimation } from "framer-motion"
 
-interface SRProps {
-  children: ReactNode,
+interface SRProps extends React.HTMLAttributes<HTMLDivElement> {
+  children: React.ReactNode,
   revealConfig?: SRConfigProps,
 }
 
