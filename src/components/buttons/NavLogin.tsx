@@ -3,13 +3,13 @@ import Link from "next/link";
 import { useTranslations } from 'next-intl';
 import DefaultButton from "./Default";
 
-interface User {
+export interface User {
     name: string;
     email: string;
     image: string;
 }
 
-interface Session {
+export interface Session {
     user: User;
 }
 
